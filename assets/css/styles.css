@@ -248,18 +248,46 @@ img {
 
 /* BOTÕES */
 .button {
-  display: inline-block;
+  display: flex ;
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: .79rem 1.2rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
-  transition: .6s;
+  transition: .6s all ;
+  text-decoration: none;
+  justify-content: center;
+  width: 170px;
+  align-items: center;
 }
+
+/* .button:hover i {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.37);
+  transform: translateX(-5px);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  visibility: visible;
+  height: auto;
+} */
+
+.button i {
+  overflow: hidden;
+  margin-right: 6px;
+  margin-top: 1.2px;
+}
+
 
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.37);
-  color: black;
+  color:black
+}
+
+.downloadcv {
+  display: flex;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 /* ===== SOBRE MIM =====*/
