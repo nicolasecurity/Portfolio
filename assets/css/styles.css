@@ -422,14 +422,12 @@ img {
 
 .work__img:hover img{
   filter: blur(3px);
-  opacity: 1;
   transform: scale(1.1);
 }
 
 .work__img:hover .text__img {
   opacity: 1;
 }
-
 
 .text__img {
   color: rgb(255, 255, 255);
