@@ -46,11 +46,16 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
-    delay: 200,
+    delay: 200, 
 //     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .sub-title',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .l-header',{}); 
+sr.reveal('.icon__img', {origin: 'right', delay: 1000, distance: '190px', rotate: { x: 10, y: 40, z: 110 }});
+sr.reveal('.section-title', {origin: 'right', delay: 600});
+sr.reveal('.footer', {origin: 'bottom', delay: 400})
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img, .sub-title',{delay: 400});
+
+sr.reveal('.home__social-icon',{ interval: 300}); 
+sr.reveal('.skills__data, .work__img, .contact__input, .contact__button',{interval: 200}); 
