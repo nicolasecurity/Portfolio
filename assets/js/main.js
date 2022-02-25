@@ -1,3 +1,37 @@
+const themes = {
+    light: {
+      background: 'white',
+      firstColor: 'hsl(var(--hue-color), 54.17%, 52.94%)',
+      secondColor: 'hsl(var(--hue-color), 56%, 12%)',
+    },
+    dark: {
+      background: 'hsl(var(--hue-color), 0%, 11%, 100%)',
+    //   firstColor: 'hsl(var(--hue-color), 54.17%, 52.94%)',
+    //   secondColor: 'hsl(var(--hue-color), 56%, 12%)',
+      firstColor: 'hsl(var(--hue-color), 54.17%, 52.94%)',
+      secondColor: 'hsl(var(--hue-color), 56%, 12%)',
+    }
+  };
+  
+  const html = document.querySelector('html')
+
+  function setTheme(newTheme) {
+    const themeColors = themes[newTheme]; // Seleciona o tema para aplicar
+    console.log(themeColors);
+    
+    Object.keys(themeColors).map(function(key) {
+      html.style.setProperty(`--${key}`, themeColors[key]); // Altera as variáveis no css
+    });
+  }
+  
+  const darkModeToggle = document.querySelector('input[name=theme]');
+    darkModeToggle.addEventListener('change', function({ target }) {
+    setTheme(target.checked ? 'dark' : 'light');
+    });
+
+
+
+
 /*===== MOSTRANDO MENU =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
