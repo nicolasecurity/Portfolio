@@ -85,7 +85,7 @@ img {
 
 .label {
 	background-color: rgb(29, 29, 29);
-	border-radius: 50px;
+	border-radius: 51px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
