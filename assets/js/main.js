@@ -1,3 +1,6 @@
+// *= ==== MUDANDOS AS CORES DOS TEMAS =====* /
+
+
 const themes = {
     light: {
       background: 'white',
