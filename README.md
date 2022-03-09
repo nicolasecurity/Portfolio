@@ -7,7 +7,7 @@ Portfólio clean, contando um pouco sobre mim e minhas habilidades e skills na p
 
 - HTML
 - CSS
-- SCSS
+- SASS
 - JavaScript
 - Scroll Reveal (JS)
 
