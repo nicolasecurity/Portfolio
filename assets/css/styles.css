@@ -42,6 +42,7 @@ html {
   --background: white;
   --firstColor: hsl(var(--hue-color), 54.17%, 52.94%);
   --secondColor: hsl(var(--hue-color), 56%, 12%);
+  --footerColor: black;
 }
 
 body {
@@ -436,20 +437,19 @@ img {
 }
 
 .skills__html {
-  width: 95%;
-  transition: 3s;
+  width: 100%;
 }
 
 .skills__css {
-  width: 79%;
+  width: 100%;
 }
 
 .skills__js {
-  width:45%;
+  width:100%;
 }
  
 .skills__ux {
-  width:40%;
+  width:100%;
 }
 
 .skills__img {
@@ -561,7 +561,47 @@ img {
   margin-bottom: 33px;
   margin-right: 8px;
   width: 40px;
+  stroke: blue;
+  fill: blue;
 }
+
+.home__img {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.home__img img {
+  width: 400px;
+  animation: rotate 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
